@@ -1,0 +1,238 @@
+.logo
+{
+	height: 50px;
+    margin-right: 5px;
+}
+.d-block.img-fluid
+{
+	width: 1070px;
+    height: 565px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 35px 2px;
+    border-radius: 3px;
+}
+.carousel-control-prev {
+    left: 10%;
+}
+.carousel-control-next {
+	right: 10%;
+}
+#login-wraper
+{
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin-top: 0.5in;
+    margin-left: -235px;
+    padding: 25px;
+    width: 420px;
+    height: 370px;
+    background: white;
+    text-align: center;
+}
+.login-form {
+    margin: 0 0 20px;
+}
+.login-form legend {
+    //font-family: 'Lato', Helvetica, sans-serif !important;
+    font-size: 36px;
+    font-weight: 300;
+    color: #333333;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin-top: 5px;
+    //margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.blue {
+    color: #447fc8;
+}
+.login-form .body {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+.login-form label {
+    //font-family: 'Lato', Helvetica, sans-serif !important;
+    font-size: 20px;
+    color: #333333;
+    font-weight: 300;
+    display: block;
+}
+.login-form .footer {
+    margin-top: 20px;
+}
+.login-form .footer .checkbox.inline {
+    display: inline;
+}
+.login-form .footer .btn {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-left: 15px;
+    padding: 7px 25px;
+    background-image: none;
+}
+.login-form .footer .checkbox.inline input[type="checkbox"] {
+    float: none;
+    margin-top: -4px;
+}
+.btn
+{
+	cursor: pointer;
+}
+.btnAddNew
+{
+	left: 88%;
+    position: absolute;
+    top: 0;
+    //z-index: 1030;
+}
+.btnRegNew
+{
+	left: 85.5%;
+    position: absolute;
+    top: 0;
+    //z-index: 1030;
+}
+.modal-body
+{
+	font-size: 14px;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.jobreqs
+{
+	margin-left: 15px;
+}
+.jobreqs, .remove-me, .add-more-role, .add-more-req
+{
+	margin-bottom: 15px;
+}
+.modal-dialog
+{
+	max-width: 625px;
+}
+form.addCompany, form.addMember, form.addStudentInternship, form.addStudent, form.addJob, form.uploadForm
+{
+	width: 70%;
+    margin: 0 auto;
+}
+.stafflist
+{
+	width: 100%;
+}
+.back-to-top
+{
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    border-radius: 25px;
+}
+.jobAlertPopup
+{
+	visibility: collapse;
+	height: 0px;
+}
+.jobAlertStudentList {
+	visibility: collapse;
+	height: 0px;	
+}
+
+span.multiselect-native-select {
+	position: relative
+}
+span.multiselect-native-select select {
+	border: 0!important;
+	clip: rect(0 0 0 0)!important;
+	height: 1px!important;
+	margin: -1px -1px -1px -3px!important;
+	overflow: hidden!important;
+	padding: 0!important;
+	position: absolute!important;
+	width: 1px!important;
+	left: 50%;
+	top: 30px
+}
+.multiselect-container {
+	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+	max-height: 275px;
+	width: 515px;
+}
+
+.multiselect-container .input-group {
+	margin: 5px
+}
+.multiselect-container>li {
+	padding: 0
+}
+.multiselect-container>li>a.multiselect-all label {
+	font-weight: 700
+}
+.multiselect-container>li.multiselect-group label {
+	margin: 0;
+	padding: 3px 20px 3px 20px;
+	height: 100%;
+	font-weight: 700
+}
+.multiselect-container>li.multiselect-group-clickable label {
+	cursor: pointer
+}
+.multiselect-container>li>a {
+	padding: 0
+}
+.multiselect-container>li>a>label {
+	margin: 0;
+	height: 100%;
+	cursor: pointer;
+	font-weight: 400;
+	padding: 3px 0 3px 30px
+}
+.multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
+	margin: 0
+}
+.multiselect-container>li>a>label>input[type=checkbox] {
+	margin-bottom: 5px
+}
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px
+}
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+	padding: 3px 20px 3px 40px
+}
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+	margin-left: -20px;
+	margin-right: 0
+}
+.mycontainer {
+	width: 90%;
+	margin: 0 auto;
+}
+.fieldInline {
+	display: inline-flex;
+}
+img.card-img-top.uw_cs {
+    width: 10%;
+    display: inline-flex;
+    float: left;
+}
+img.card-img-top.cepe {
+    width: 78%;
+    float: right;
+}

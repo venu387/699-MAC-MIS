@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./assets/img/uw_logo_blue.png">
+
+    <title>MAC - MIS</title>
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/css/mystyles.css">
+</head>
+<body>
+<!--Navbar Start-->
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/UW_Logo.png"/>MAC - Management Information System</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About MAC Program</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Internship
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="jobs.html">Jobs</a>
+          <a class="dropdown-item" href="company.html">Company Profiles</a>
+          <!--Show only of Faculty or Staff-->
+          <a class="dropdown-item" href="internshipdetails.html">Student Intership Details</a>
+        </div>
+      </li>
+      <!--Display only if Staff or Faculty-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Administration
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="stafflist.html">Staff Members</a>
+          <a class="dropdown-item" href="facultylist.html">Faculty Members</a>
+          <a class="dropdown-item" href="students.html">Students</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reports</a>
+      </li>
+    </ul>
+  </div>
+  <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Login&nbsp&nbsp<span class="fa fa-user-circle" style="display:inline;"></span></a>
+      </li>
+    </ul>
+</nav>
+<!--Navbar End-->
+
+<div class="container">
+	<div class="container-fluid">
+    <div>
+      <h3 class="mt-4 mb-4">Create/Edit Job Posting</h3>
+      <!-- <button type="button" class="btn btn-secondary pull-right btnAddNew" data-toggle="modal" data-target="#jobEditAddModal"><span class="fa fa-plus-circle mr-2"></span>Add New</button> -->
+    </div>
+    <form id="addCompany" action="jobs.html" method="POST">
+      <div class="modal-body">
+        <div class="form-group row">
+          <label for="textJobTitle" class="col-3 col-form-label">Job Title:</label>
+          <div class="col-9">
+            <input class="form-control" type="text" value="Software Developer" id="textJobTitle">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="jobGroupDdl" class="col-3 col-form-label">Job Group:</label>
+          <div class="col-9">
+            <select class="custom-select form-control" id="jobGroupDdl">
+              <option selected>--Select--</option>
+              <option value="1">Web Development</option>
+              <option value="2">Mobile Development</option>
+              <option value="3">Data Analysis</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="companyDdl" class="col-3 col-form-label">Company:</label>
+          <div class="col-7">
+            <!-- <input class="form-control" type="text" value="Blackberry Limited" id="textCompany"> -->
+            <select class="custom-select form-control" id="companyDdl">
+              <option selected>--Select--</option>
+              <option value="1">Blackberry Limited</option>
+              <option value="2">Oracle</option>
+              <option value="3">PWC</option>
+            </select>
+          </div>
+          <div class="col-2 mt-1">
+            <a href="addcompany.html" class="btn btn-secondary btn-sm pull-right">Add New</a>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="internshipTypeDdl" class="col-3 col-form-label">Type of Internship:</label>
+          <div class="col-9">
+            <select class="custom-select form-control" id="internshipTypeDdl">
+              <option selected>--Select--</option>
+              <option value="1">Industry</option>
+              <option value="2">MAC Project</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="textContact" class="col-3 col-form-label">Contact Email ID:</label>
+          <div class="col-9">
+            <input class="form-control" type="text" value="hr@blackberry.ca" id="textContact">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="textSalary" class="col-3 col-form-label">Salary:</label>
+          <div class="col-9">
+            <input class="form-control" type="text" value="C$ 50,000" id="textSalary">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="textDOJ" class="col-3 col-form-label">Expected DOJ:</label>
+          <div class="col-9">
+            <input class="form-control" type="date" value="Jan 01 2018" id="textDOJ">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="textURL" class="col-3 col-form-label">Job Posting URL:</label>
+          <div class="col-9">
+            <input class="form-control" type="url" value="https://blackberry.ca/careers/job-321738" id="textURL">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="jobStatusDdl" class="col-3 col-form-label">Job Status:</label>
+          <div class="col-9">
+            <select class="custom-select form-control" id="jobStatusDdl">
+              <option selected>--Select--</option>
+              <option value="1">Unopen</option>
+              <option value="2">Open</option>
+              <option value="3">Closed</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="textAreaDesc" class="col-3 col-form-label">Job Description:</label>
+          <div class="col-9">
+            <textarea class="form-control" id="textAreaDesc" rows="3" value="Write some job description here..."></textarea>
+            <!-- <input class="form-control" type="text" value="Write some job description here..." id="textDesc"> -->
+          </div>
+        </div>
+        <hr/>
+        <h6 class="col-10 col-form-label mb-3">Job Requirements:</h6>
+        <div class="form-group row">
+          <input autocomplete="off" class="input form-control col-10 jobreqs" id="reqfield1" name="prof1" type="text" placeholder="Requirement Description..." data-items="8"/>
+          <button id="jr1" class="btn add-more-req" type="button">+</button>
+        </div>
+        <hr/>
+        <h6 class="col-10 col-form-label mb-3">Job Roles & Responsibilities:</h6>
+        <div class="form-group row">
+          <input autocomplete="off" class="input form-control col-10 jobreqs" id="rolefield1" name="prof1" type="text" placeholder="Role & Responsibility Description..." data-items="8"/>
+          <button id="jr1" class="btn add-more-role" type="button">+</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+	</div>
+</div>
+</body>
+
+<script src="./assets/js/jquery-3.1.1.min.js"></script>
+<script src="./assets/js/tether.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/myscripts.js"></script>
+</html>

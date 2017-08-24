@@ -1,0 +1,81 @@
+<html>
+<head>
+<style type="text/css">
+.lbl {
+	display: inline;
+}
+</style>
+</head>
+<body
+	style="font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.5;">
+	<div class="jumbotron"
+		style="border: 1px solid; border-radius: 7px; padding: 20px; width: 600px; margin: 0 auto;">
+		<h3 class="display-6">Hello {{user}},</h3>
+		<div class="lead" style="padding: 0 0 20px 0;">
+			New job opportunity has been posted on MAC - MIS. Please find the
+			details below:
+			<hr />
+			<div style="padding: 10px 0 0px 0;">
+				<div>
+					<div class="lbl">
+						<label>Title:</label>
+
+					</div>
+					<div style="display: inline; font-weight: 500;">
+						<label>{{jobTitle}}</label>
+					</div>
+				</div>
+				<div>
+					<div class="lbl">
+						<label>Company:</label>
+
+					</div>
+					<div style="display: inline; font-weight: 500;">
+						<label>{{company}}</label>
+					</div>
+				</div>
+				<div>
+					<div class="lbl">
+						<label>Location:</label>
+
+					</div>
+					<div style="display: inline; font-weight: 500;">
+						<label>{{location}}</label>
+					</div>
+				</div>
+				<div>
+					<div class="lbl">
+						<label>Contact Person:</label>
+					</div>
+					<div style="display: inline; font-weight: 500;">
+						<label>{{contactName}}</label>
+					</div>
+				</div>
+				<div>
+					<div class="lbl">
+						<label>Contact Email:</label>
+					</div>
+					<div style="display: inline; font-weight: 500;">
+						<label>{{email}}</label>
+					</div>
+				</div>
+				<div>
+					<div class="lbl">
+						<label>Job Posting:</label>
+					</div>
+					<div style="display: inline; font-weight: 500;">
+						<label>{{url}}</label>
+					</div>
+				</div>
+				<div>
+					<a href="{{urlLink}}"target"_blank">Apply Here</a>
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+		<p class="lead">
+			Thanks & Regards,<br />Team MAC-MIS
+		</p>
+	</div>
+</body>
+</html>

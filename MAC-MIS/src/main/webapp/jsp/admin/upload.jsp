@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="/assets/img/uw_logo_blue.png">
+
+<title>MAC - MIS</title>
+<jsp:include page="../shared/styles.jsp" />
+</head>
+<body>
+	<jsp:include page="../shared/navbar.jsp" />
+	<div class="container">
+		<div class="container-fluid">
+			<div>
+				<h3 class="mt-4 mb-4">Upload Student Data</h3>
+			</div>
+			<form:form action="/admin/upload" method="POST" cssClass="uploadForm"
+				enctype="multipart/form-data">
+				
+				<%
+					if (request.getAttribute("flag").equals("success")) {
+				%>
+				<div class="alert alert-success" role="alert">
+					<strong>Success!</strong> Data has been inserted into the database.
+				</div>
+				<%
+					}
+				%>
+
+				<input type="file" name="file" />
+				<br />
+
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">Upload</button>
+				</div>
+			</form:form>
+		</div>
+	</div>
+</body>
+<jsp:include page="../shared/scripts.jsp" />
+</html>
